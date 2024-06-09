@@ -1,0 +1,50 @@
+
+public class Conta_Poupanca extends Conta{
+	public double deposito;
+	public double saque;
+	public double transferencia;
+	public double saldo;
+	
+	
+	public void Deposito(double deposito) {
+		this.deposito = deposito;
+		System.out.printf("Deposito de %.2fn realizado ", deposito);
+		
+	}
+	
+	public void Saque(double saque) {
+		this.saque = saque;
+		System.out.printf("Saque de %.2fn realizado ", saque);
+	}
+	
+	public void Transferencia(double transferencia) {
+		this.transferencia = transferencia;
+		System.out.printf("Transferencia de %.2fn realizada ", transferencia);
+	}
+	
+	public void Saldo() {
+		this.saldo = deposito - saque - transferencia;
+		System.out.printf("Seu saldo é %.2fn ", saldo);
+	}
+
+	@Override
+	public void Deposito() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Saque() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Transferencia() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}

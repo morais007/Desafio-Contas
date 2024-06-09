@@ -1,0 +1,26 @@
+
+public class Conta {
+	private double deposito;
+	private double saque;
+	private double transferencia;
+	public double saldo;
+	
+	
+	public void Deposito(double deposito) {
+		this.deposito = deposito;
+		
+	}
+	
+	public void Saque(double saque) {
+		this.saque = saque;
+	}
+	
+	public void Transferencia(double transferencia) {
+		this.transferencia = transferencia;
+	}
+	
+	public void Saldo() {
+		this.saldo = deposito - saque - transferencia;
+	}
+
+}

@@ -1,0 +1,50 @@
+
+public class Conta_Corrente extends Banco {
+	
+	private double deposito;
+	private double saque;
+	private double transferencia;
+	private double saldo;
+	
+	
+	public void Deposito(double deposito) {
+		this.deposito = deposito;
+		System.out.printf("Deposito de %.2f realizado \n", deposito);
+		
+	}
+	
+	public void Saque(double saque) {
+		this.saque = saque;
+		System.out.printf("Saque de %.2f realizado \n", saque);
+		
+	}
+	
+	public void Transferencia(double transferencia) {
+		this.transferencia = transferencia;
+		System.out.printf("Transferencia de %.2f realizada \n", transferencia);
+		
+	}
+	
+	public void Saldo() {
+		this.saldo = deposito - saque - transferencia;
+		System.out.printf("Seu saldo é %.2f \n", saldo);
+	}
+
+	@Override
+	public void Deposito() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Saque() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Transferencia() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,29 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Conta_Poupanca pp = new Conta_Poupanca();
+	
+		pp.Deposito(100);
+		System.out.println();
+		pp.Saque(10);
+		System.out.println();
+		pp.Transferencia(20);
+		System.out.println();
+		pp.Saldo();
+		
+		
+		Conta_Corrente cc = new Conta_Corrente();
+		
+		cc.Deposito(600);
+		System.out.println();
+		cc.Saque(100);
+		System.out.println();
+		cc.Transferencia(70);
+		System.out.println();
+		cc.Saldo();
+	
+
+	}
+
+}

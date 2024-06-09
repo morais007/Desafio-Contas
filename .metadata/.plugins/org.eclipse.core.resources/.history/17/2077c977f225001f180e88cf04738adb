@@ -1,0 +1,25 @@
+
+public class Conta_Corrente extends Conta {
+	public double deposito;
+	public double saque;
+	public double transferencia;
+	public double saldo;
+	
+	
+	public void Deposito(double deposito) {
+		this.deposito = deposito;
+		
+	}
+	
+	public void Saque(double saque) {
+		this.saque = saque;
+	}
+	
+	public void Transferencia(double transferencia) {
+		this.transferencia = transferencia;
+	}
+	
+	public void Saldo() {
+		this.saldo = deposito - saque - transferencia;
+	}
+}
